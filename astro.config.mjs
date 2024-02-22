@@ -8,4 +8,4 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://ProgramaDelfinITPN.github.io',
   base: '/ProgramaDelfinITPN.github.io'
-});
+}); 
