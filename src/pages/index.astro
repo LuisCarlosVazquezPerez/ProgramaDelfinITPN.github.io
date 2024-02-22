@@ -1,0 +1,25 @@
+---
+import Head from "../components/Head.astro";
+import Header from '../components/Header.astro'
+import Main from "../components/Main";
+import Banderas from "../components/Banderas";
+import  Carousel  from "../components/Carousel";
+import Back from '../components/Back';
+import Delfin from '../components/Delfin';
+import Footer from '../components/Footer.astro';
+import Cartel from '../components/Cartel.astro';
+---
+
+<html lang="es">
+	<Head titulo="Programa Delfín"/>
+	<body>
+		<Header/>
+		<Main client:only/>
+		<Banderas />
+		<Carousel client:only="react"/>
+		<Delfin/>
+		<Cartel />
+		<Footer/>
+		<Back client:only/>
+	</body>
+</html>

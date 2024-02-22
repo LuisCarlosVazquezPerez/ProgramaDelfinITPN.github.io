@@ -1,0 +1,38 @@
+---
+import Navegacion from "../components/Navegacion";
+---
+
+<header class="relative min-h-screen overflow-hidden">
+    <video
+        class="absolute inset-0 w-full h-full object-cover z-0"
+        src="./video/delvide.mp4"
+        loop
+        autoplay
+        muted></video>
+    <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+
+    <nav class="relative z-50 flex-col">
+        <Navegacion client:only />
+    </nav>
+
+    <div
+        class="absolute inset-0 z-20 flex justify-center items-center flex-col"
+    >
+        <h2 class="md:flex text-white text-center font-outfit text-7xl md:text-6xl lg:text-8xl"   data-aos="fade-right"> 
+            <div>
+                <span class="text-cyan-400">E</span>xplora<span class="hidden md:inline ">,</span>
+            </div>
+            <div>
+                <span class="text-cyan-400">D</span>escubre<span class="hidden md:inline ">,</span>
+            </div>
+            <div>
+                <span class="text-cyan-400">I</span>nnova
+            </div>
+        </h2>
+
+        <h1
+            class="text-white text-center font-outfit text-xl md:text-1xl lg:text-3xl"  data-aos="fade-right">
+            Comienza con Delfín
+        </h1>
+    </div>
+</header>
